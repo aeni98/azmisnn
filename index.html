@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rima Mandiri</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">~RIMA MANDIRI~</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Category</button>
+          <div class="dropdown-content">
+            <a href="#">Fence</a>
+            <a href="#">Canopy</a>
+            <a href="#">Trellis</a>
+            <a href="#">Folding Gate</a>
+            <a href="#">Press Door</a>
+          </div>
+        </div>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="log-in"><i data-feather="log-in"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="home" id="home">
+      <div class="left">
+        <main class="content">
+          <h1>Rima Mandiri Welding Workshop</h1>
+          <p>
+            Menerima tempahan berbahan besi seperti TERALIS, CANOPY, PAGAR,
+            TERALIS, RELING TANGGA, BALKON. Tersedia juga pintu ruko/toko,
+            FOLDING GATE, PINTU PRESS dan lain sebagainya.
+          </p>
+          <p>
+            Selain tempahan baru, Kami juga menerima jasa repair pintu FOLDING
+            GATE dengan semua konsidi kerusakan.
+          </p>
+        </main>
+      </div>
+      <div class="right">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/canopy.jpeg" />
+            <div class="text">Canopy</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/fence.jpeg" />
+            <div class="text">Fence</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/folding-gate.jpg" />
+            <div class="text different">Folding Gate</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/press-door.jpg" />
+            <div class="text">Press Door</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/stair-railings.jpg" />
+            <div class="text">Stair Rallings</div>
+          </div>
+        </div>
+        <div class="dot-icon">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Contact Section start -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3971.3621505312485!2d95.336244!3d5.513145000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzAnNDcuMyJOIDk1wrAyMCcxMC41IkU!5e0!3m2!1sid!2sid!4v1688801284026!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="contact-me">
+          <p><i data-feather="user"></i> Rima Mandiri</p>
+
+          <p><i data-feather="phone"></i> 085373679822</p>
+
+          <p><i data-feather="mail"></i> azmyazari@gmail.com</p>
+
+          <p>
+            <i data-feather="map-pin"></i> Jalan Soekarna Hatta, samping gudang
+            susu, lamreung, aceh besar
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home" id="home">Home</a>
+        <a href="#about" id="about">Tentang Kami</a>
+        <a href="#contact" id="contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">*****</a>. &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Sider -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
